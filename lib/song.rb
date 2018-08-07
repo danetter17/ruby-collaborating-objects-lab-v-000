@@ -7,8 +7,8 @@ class Song
   end
   
   def self.new_by_filename(filename)
-    song = self.new(name)
     name = filename.split(" - ")[1]
+    song = self.new(name)
     #how to remove .mp3?
     song
   end
