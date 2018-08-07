@@ -9,7 +9,7 @@ class MP3Importer
   def files
     #where the path goes perhaps?
     @files = Dir.glob("#{@path}/*.mp3")
-    @files.map {|filename| filename.gsub}
+    @files.map {|filename| filename.gsub("./spec/fixtures/mp3s/", "")}
   end
 
   def import(filenames)
