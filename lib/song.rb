@@ -11,7 +11,7 @@ class Song
     song = self.new(name)
     artist_name = filename.split(" - ")[0]
     artist = Artist.new(artist_name)
-    Artist.all << artist
+    Artist.all << artist.uniq
   end
   
   def artist_name=(name)
