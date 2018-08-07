@@ -14,7 +14,7 @@ class Song
     artist = Artist.new(artist_name)
     Artist.all << artist
     Artist.all.uniq
-    #binding.pry
+    binding.pry
     
     # if (Artist.all.include?(artist_name))
     #   #self.artist.name = name
