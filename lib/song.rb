@@ -13,7 +13,7 @@ class Song
     artist_name = filename.split(" - ")[0]
     Artist.find_or_create_by_name(artist_name)
     #binding.pry
-    Artist.add_song
+    Artist.add_song(song)
   end
   
   def artist_name=(name)
