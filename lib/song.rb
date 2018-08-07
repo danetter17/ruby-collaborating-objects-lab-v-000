@@ -15,10 +15,10 @@ class Song
     #Artist.all << artist
     #binding.pry
     
-    if (Artist.all.include?(self.artist.name))
-      self.artist.name = name
+    if (Artist.all.include?(self.artist))
+      #self.artist.name = name
     else
-      Artist.all << self.artist.name
+      Artist.all << self.artist
     end
   end
   
