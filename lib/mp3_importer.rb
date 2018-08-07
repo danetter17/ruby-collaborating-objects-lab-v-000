@@ -12,7 +12,7 @@ class MP3Importer
     @files.map {|filename| filename.gsub("./spec/fixtures/mp3s/", "")}
   end
 
-  def import(filenames)
+  def import
     filenames.each{|filename| Song.new_by_filename(filename)}
   end
   
