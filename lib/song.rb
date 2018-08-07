@@ -13,7 +13,7 @@ class Song
     artist_name = filename.split(" - ")[0]
     artist = Artist.new(artist_name)
     Artist.all << artist
-    binding.pry
+    #binding.pry
   end
   
   def artist_name=(name)
