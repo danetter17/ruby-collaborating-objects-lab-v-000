@@ -12,7 +12,7 @@ class Song
     song = self.new(name)
     artist_name = filename.split(" - ")[0]
     artist = Artist.new(artist_name)
-    Artist.find_or_create_by_name
+    Artist.find_or_create_by_name(artist_name)
     #binding.pry
     
     # if (Artist.all.include?(artist_name))
