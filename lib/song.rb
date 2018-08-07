@@ -19,6 +19,7 @@ class Song
       #self.artist.name = name
     else
       Artist.all << self.artist.name
+    end
   end
   
   def artist_name=(name)
