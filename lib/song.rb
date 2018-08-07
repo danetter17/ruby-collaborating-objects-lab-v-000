@@ -12,14 +12,14 @@ class Song
     song = self.new(name)
     artist_name = filename.split(" - ")[0]
     artist = Artist.new(artist_name)
-    #Artist.all << artist
+    Artist.all << artist
     #binding.pry
     
-    if (Artist.all.include?(artist_name))
-      #self.artist.name = name
-    else
-      Artist.all << artist_name
-    end
+    # if (Artist.all.include?(artist_name))
+    #   #self.artist.name = name
+    # else
+    #   Artist.all << artist_name
+    # end
   end
   
   # def artist_name=(name)
